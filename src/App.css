@@ -9,10 +9,22 @@
     background-color: #474463;
     color: #fff;
   }
-  .light {
+.dark .nav-link{
+  color: #fff;
+}
+.dark .fas{
+  color: #cfd0d7;
+}
+.light {
     background-color: #cfd0d7;
     color: #333;
   }
+.light .nav-link{
+  color: #474463;
+}
+.light .fas{
+  color: #474463;
+}
 
 * {
   margin: 0;
@@ -23,147 +35,4 @@
 
 body {
   background-color: #cfd0d7
-}
-
-header {
-  background-color: #cfd0d7;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-  padding: 20px
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #003da5;
-  text-decoration: none
-}
-
-.menu {
-  display: flex;
-  list-style: none
-}
-
-.menu li {
-  margin-left: 20px
-}
-
-.menu li:first-child {
-  margin-left: 0
-}
-
-.menu a {
-  font-size: 16px;
-  color: #999;
-  text-decoration: none;
-  transition: color .2s ease
-}
-
-.menu a:hover {
-  color: #003da5
-}
-
-.hero {
-  background-color: #fff;
-  padding: 100px 20px;
-  text-align: center
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  color: #003da5;
-  margin-bottom: 20px
-}
-
-.hero p {
-  font-size: 24px;
-  font-weight: 400;
-  color: #666;
-  margin-bottom: 40px
-}
-
-.cta {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #003da5;
-  padding: 16px 32px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color .2s ease
-}
-
-.cta:hover {
-  background-color: #002968
-}
-
-.features {
-  background-color: #f7f7f7;
-  padding: 80px 20px;
-  text-align: center
-}
-
-.features h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #003da5;
-  margin-bottom: 40px
-}
-
-.feature {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px
-}
-
-.feature img {
-  width: 80px;
-  margin-bottom: 20px
-}
-
-.feature h3 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px
-}
-
-.feature p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #666;
-  line-height: 1.5;
-  max-width: 400px
-}
-
-.cta-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #003da5;
-  color: #fff;
-  padding: 100px 20px
-}
-
-.cta-message {
-  max-width: 600px
-}
-
-.cta-message h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 40px
-}
-
-.cta-image {
-  width: 50%;
-  margin-left: 40px
 }

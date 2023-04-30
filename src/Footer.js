@@ -22,6 +22,7 @@ export default function Footer() {
                 className='text-dark m-1'
                 href='#!'
                 role='button'
+                noRipple
               >
                 <MDBIcon fab className='fab fa-facebook-f' />
               </MDBBtn>
@@ -34,6 +35,7 @@ export default function Footer() {
                 className='text-dark m-1'
                 href='#!'
                 role='button'
+                noRipple
               >
                 <MDBIcon fab className='fa-twitter' />
               </MDBBtn>
@@ -46,6 +48,7 @@ export default function Footer() {
                 className='text-dark m-1'
                 href='#!'
                 role='button'
+                noRipple
               >
                 <MDBIcon fab className='fa-google' />
               </MDBBtn>
@@ -58,6 +61,7 @@ export default function Footer() {
                 className='text-dark m-1'
                 href='#!'
                 role='button'
+                noRipple
               >
                 <MDBIcon fab className='fa-instagram' />
               </MDBBtn>
@@ -70,6 +74,7 @@ export default function Footer() {
                 className='text-dark m-1'
                 href='#!'
                 role='button'
+                noRipple
               >
                 <MDBIcon fab className='fa-linkedin' />
               </MDBBtn>
@@ -82,6 +87,7 @@ export default function Footer() {
                 className='text-dark m-1'
                 href='#!'
                 role='button'
+                noRipple
               >
                 <MDBIcon fab className='fa-github' />
               </MDBBtn>

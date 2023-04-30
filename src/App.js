@@ -8,11 +8,14 @@ import {
   MDBNavbarItem,
   MDBNavbarLink,
   MDBCollapse,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBBtn
 } from 'mdb-react-ui-kit';
 import Footer from './Footer';
 
 function App() {
-  const [showNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   const toggleTheme = () => {
@@ -29,8 +32,19 @@ function App() {
 
   return (
     <Fragment>
-      <MDBNavbar expand='lg' light bgColor={theme == 'light' ? 'light' : 'dark'}>
+      <MDBNavbar expand='lg'>
         <MDBContainer fluid>
+          <MDBNavbarToggler
+            className='ms-auto'
+            type='button'
+            data-target='#navbarTogglerExternalContent'
+            aria-controls='navbarTogglerExternalContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+            onClick={() => setShowNav(!showNav)}
+          >
+            <MDBIcon icon='bars' fas></MDBIcon>
+          </MDBNavbarToggler>
           <MDBNavbarBrand href='#'>
             <img src={theme == 'dark' ? "/logo-white.png" : "/logo2.png"} height="50px" width="50px"></img>
           </MDBNavbarBrand>
@@ -47,12 +61,14 @@ function App() {
               <MDBNavbarItem>
                 <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
               </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBBtn color='link' size='sm' floating noRipple onClick={toggleTheme}>
+                  <MDBIcon size='lg' icon={theme == 'light' ? 'moon' : 'sun'} fas></MDBIcon>
+                </MDBBtn>
+              </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
-        </MDBContainer>
-        <div className={`App ${theme}`}>
-          <button onClick={toggleTheme}>Toggle Theme</button>
-        </div>
+        </MDBContainer>       
       </MDBNavbar>
       <Footer></Footer>
     </Fragment>
