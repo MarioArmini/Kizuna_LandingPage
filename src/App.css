@@ -7,13 +7,20 @@
 
 .dark {
     background-color: #474463;
-    color: #fff;
+    color: #cfd0d7
   }
 .dark .nav-link{
-  color: #fff;
+  color: #cfd0d7
 }
 .dark .fas{
   color: #cfd0d7;
+}
+.dark .navbar .dropdown-menu a:not(.active){
+  color: #cfd0d7;
+}
+.dark .navbar .dropdown-menu a:hover{
+  background-color: #cfd0d7;
+    color: #474463;
 }
 .light {
     background-color: #cfd0d7;
@@ -24,6 +31,13 @@
 }
 .light .fas{
   color: #474463;
+}
+.light .navbar .dropdown-menu a:not(.active){
+  color: #474463;
+}
+.light .navbar .dropdown-menu a:hover{
+  background-color: #474463;
+    color: #cfd0d7;
 }
 
 * {

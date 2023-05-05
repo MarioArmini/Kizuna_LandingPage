@@ -15,7 +15,6 @@ export default function Footer() {
           <MDBContainer className='pt-4'>
             <section className='mb-4'>
               <MDBBtn
-                rippleColor="dark"
                 color='link'
                 floating
                 size="lg"
@@ -28,7 +27,6 @@ export default function Footer() {
               </MDBBtn>
     
               <MDBBtn
-                rippleColor="dark"
                 color='link'
                 floating
                 size="lg"
@@ -41,7 +39,6 @@ export default function Footer() {
               </MDBBtn>
     
               <MDBBtn
-                rippleColor="dark"
                 color='link'
                 floating
                 size="lg"
@@ -54,7 +51,6 @@ export default function Footer() {
               </MDBBtn>
     
               <MDBBtn
-                rippleColor="dark"
                 color='link'
                 floating
                 size="lg"
@@ -67,7 +63,6 @@ export default function Footer() {
               </MDBBtn>
     
               <MDBBtn
-                rippleColor="dark"
                 color='link'
                 floating
                 size="lg"
@@ -80,7 +75,6 @@ export default function Footer() {
               </MDBBtn>
     
               <MDBBtn
-                rippleColor="dark"
                 color='link'
                 floating
                 size="lg"
