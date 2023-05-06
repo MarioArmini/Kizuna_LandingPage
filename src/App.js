@@ -44,7 +44,7 @@ export default function App() {
 
   return (
     <Fragment>
-      <MDBNavbar expand='lg'>
+      <MDBNavbar expand='lg' style={{backgroundColor: theme === 'dark' ? '#474463' : '#cfd0d7'}}>
         <MDBContainer fluid>
           <MDBNavbarToggler
             className='ms-auto'
@@ -98,7 +98,7 @@ export default function App() {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-      <MainComponent></MainComponent>
+      <MainComponent theme = {theme} t = {t}></MainComponent>
       <Footer></Footer>
     </Fragment>
 
