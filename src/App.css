@@ -13,7 +13,7 @@
   }
 .dark .nav-link{
   color: #cfd0d7;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .dark .nav-link:hover{
   background-color: rgba(207, 208, 215, 0.7);
@@ -21,6 +21,12 @@
 }
 .dark .fas{
   color: #cfd0d7;
+}
+.dark .fab{
+  color: #cfd0d7;
+}
+.dark .btn-sm.py-2:hover:hover{
+  border-color: rgba(207, 208, 215, 0.7) !important;
 }
 .dark .navbar .dropdown-menu a:not(.active){
   color: #cfd0d7;
@@ -47,7 +53,7 @@
   }
 .light .nav-link{
   color: rgba(71, 68, 99, 1);
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .light .nav-link:hover{
   background-color: rgba(71, 68, 99, 0.7);
@@ -55,6 +61,12 @@
 }
 .light .fas{
   color: #474463;
+}
+.light .fab{
+  color: #474463;
+}
+.light .btn-sm.py-2:hover{
+  border-color: rgba(71, 68, 99, 0.7) !important;
 }
 .light .navbar .dropdown-menu a:not(.active){
   color: #474463;
@@ -67,7 +79,7 @@
   border-color: rgba(71, 68, 99, 0.7) !important;
 }
 .light .btn-primary{
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 .light .btn.btn-primary.d-flex.justify-content-start:active{
   background-color: rgba(0, 0, 0, 0.8) !important;

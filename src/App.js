@@ -71,7 +71,7 @@ export default function App() {
                 <MDBNavbarLink href='#developers'>{t('developersText')}</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>TBD</MDBNavbarLink>
+                <MDBNavbarLink href='#footer'>{t('contactsText')}</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBBtn style={{ backgroundColor: "transparent", outline: "none", borderColor: "transparent" }} className='py-2' color='none' size='sm' noRipple onClick={toggleTheme}>
