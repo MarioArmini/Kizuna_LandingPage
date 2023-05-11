@@ -1,13 +1,6 @@
 {
   "short_name": "Kizuna",
   "name": "Kizuna",
-  "icons": [
-    {
-      "src": "/assets/logo.png",
-      "type": "image/png",
-      "sizes": "any"
-    }
-  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
