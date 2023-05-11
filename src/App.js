@@ -44,7 +44,7 @@ export default function App() {
 
   return (
     <Fragment>
-      <MDBNavbar expand='lg' style={{backgroundColor: theme === 'dark' ? '#474463' : '#cfd0d7'}}>
+      <MDBNavbar sticky expand='lg' style={{backgroundColor: theme === 'dark' ? '#474463' : '#cfd0d7'}}>
         <MDBContainer fluid>
           <MDBNavbarToggler
             className='ms-auto'
@@ -63,15 +63,15 @@ export default function App() {
           <MDBCollapse navbar show={showNav}>
             <MDBNavbarNav>
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current='page' href='#'>
-                  Home
+                <MDBNavbarLink href='#about'>
+                  {t('aboutText')}
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Features</MDBNavbarLink>
+                <MDBNavbarLink href='#developers'>{t('developersText')}</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
+                <MDBNavbarLink href='#'>TBD</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBBtn style={{ backgroundColor: "transparent", outline: "none", borderColor: "transparent" }} className='py-2' color='none' size='sm' noRipple onClick={toggleTheme}>
@@ -99,7 +99,7 @@ export default function App() {
         </MDBContainer>
       </MDBNavbar>
       <MainComponent theme = {theme} t = {t}></MainComponent>
-      <Footer></Footer>
+      <Footer theme = {theme}></Footer>
     </Fragment>
 
   );

@@ -9,9 +9,9 @@ import {
 } from 'mdb-react-ui-kit';
 import "./App.css";
 
-export default function Footer() {
+export default function Footer(props) {
     return (
-        <MDBFooter className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
+        <MDBFooter id='footer' className='text-center' style={{ backgroundColor: props.theme === 'dark' ? '#474463' : '#cfd0d7', color: props.theme === 'light' ? '#474463' : '#cfd0d7' }}>
           <MDBContainer className='pt-4'>
             <section className='mb-4'>
               <MDBBtn
@@ -52,11 +52,11 @@ export default function Footer() {
             </section>
           </MDBContainer>
     
-          <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+          <div className='text-center p-3' style={{ color: props.theme === 'light' ? '#474463' : '#cfd0d7' }}>
             © 2023 Copyright:
-            <a className='text-dark'>
+            <b>
               Kizuna
-            </a>
+            </b>
           </div>
         </MDBFooter>
       );
