@@ -28,6 +28,7 @@ export default function App() {
 
   const changeLanguage = (e) => {
     i18n.changeLanguage(e);
+    localStorage.setItem('language', e);
   };
 
   const toggleTheme = () => {
@@ -93,6 +94,15 @@ export default function App() {
                     </MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
+              </MDBNavbarItem>
+              <MDBNavbarItem className='ml-auto'>
+                <MDBNavbarLink hidden='true' style={{ color: theme === 'dark' ? '#474463' : '#cfd0d7', 
+                        backgroundColor: theme === 'light' ? '#474463' : '#cfd0d7',
+                        outline: "none",
+                        borderColor: "transparent",
+                        borderRadius: '15px' }} className='py-2 appButton' color='none' size='sm' noRipple>
+                  {t('appButtonText')}
+                </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

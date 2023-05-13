@@ -14,6 +14,15 @@ import {
 
 export default function MainComponent(props) {
 
+  var cardBG2String = 'url(../assets/card_BG2.png)';
+  var cardBGLight = 'url(../assets/card_BGLight.png)';
+  var cardBGDark = 'url(../assets/card_BGDark.png)';
+
+  var WPIT = '../assets/Kizuna_WP.pdf';
+  var WPEN = '../assets/Kizuna_WP_EN.pdf';
+
+  var language = localStorage.getItem('language');
+
     return (
         <Fragment>
             <MDBContainer className='px-1'>
@@ -23,13 +32,13 @@ export default function MainComponent(props) {
                   className="text-center text-md-left mt-xl-5 mb-5"
                   style={{color: props.theme === 'light' ? '#474463' : '#cfd0d7'}}
                 >
-                    <h1 className="h1-responsive font-weight-bold mt-sm-5">
+                    <h1 className="h1-responsive font-weight-bold mt-sm-5" style={{fontSize: '50px'}}>
                       {props.t('title')}
                     </h1>
                     <hr className="hr-light" />
-                    <h6 className="mb-4">
+                    <h4 className="mb-4">
                       {props.t('subTitle')}
-                    </h6>
+                    </h4>
                 </MDBCol>
               </MDBRow>
               <MDBRow id='about'>
@@ -43,10 +52,10 @@ export default function MainComponent(props) {
                       className='mt-5'
                     >
                       <MDBCardBody className='mt-2'>
-                        <MDBCardTitle className='text-md-left'>
+                        <MDBCardTitle className='text-md-left' style={{fontSize: '30px'}}>
                           {props.t('explanationCardTitle')}
                         </MDBCardTitle>
-                        <MDBCardText className='mt-3 text-md-left'>
+                        <MDBCardText className='mt-3 text-md-left' style={{ opacity:'65%', color: props.theme === 'light' ? '#474463' : '#cfd0d7', fontSize:'23px' }}>
                           {props.t('explanationCardSubTitle')}
                         </MDBCardText>
                       </MDBCardBody>
@@ -60,7 +69,7 @@ export default function MainComponent(props) {
                     <MDBCard
                       style={{backgroundColor: 'transparent',
                               color: props.theme === 'dark' ? '#474463' : '#cfd0d7', borderRadius: "15px",
-                              backgroundImage: 'url(../assets/card_BG2.png)'}}
+                              backgroundImage: cardBG2String}}
                       className='mt-5'
                     >
                       <MDBCardBody
@@ -68,12 +77,11 @@ export default function MainComponent(props) {
                         <MDBCardTitle style={{color: 'white'}} className='mt-5 text-md-left'>
                           {props.t('whitePaperCardTitle')}
                         </MDBCardTitle>
-                        <MDBCardText style={{color: 'white'}}  className='mt-3 text-md-left'>
-                          {props.t('whitePaperCardSubTitle')}
-                        </MDBCardText>
                         <MDBBtn className='d-flex justify-content-start'
                                 noRipple
-                                style={{ borderRadius: '15px'}}
+                                style={{ maxWidth: '50%', borderRadius: '15px'}}
+                                href={language === 'it' ? WPIT : WPEN}
+                                target='_blank'
                         >
                           {props.t('whitePaperCardButtonText')}
                           <MDBIcon className='ml-2 mt-1' size='sm' icon='arrow-right'>
@@ -92,7 +100,7 @@ export default function MainComponent(props) {
                     <MDBCard
                       style={{backgroundColor: props.theme === 'light' ? '#474463' : '#cfd0d7',
                               color: props.theme === 'dark' ? '#474463' : '#cfd0d7', borderRadius: "15px",
-                              backgroundImage: props.theme === 'dark' ? 'url(../assets/card_BGLight.png)' : 'url(../assets/card_BGDark.png)'}}
+                              backgroundImage: props.theme === 'dark' ? cardBGLight : cardBGDark}}
                       className='mt-5'
                     >
                       <MDBCardBody className='mt-5'>
@@ -125,7 +133,7 @@ export default function MainComponent(props) {
                         <MDBCardTitle className='mt-1 text-md-left'>
                           {props.t('githubCardTitle')}
                         </MDBCardTitle>
-                        <MDBCardText className='mt-3 text-md-left'>
+                        <MDBCardText style={{color: props.theme === 'light' ? '#474463' : '#cfd0d7' }} className='mt-3 text-md-left'>
                           {props.t('githubCardSubTitle')}
                         </MDBCardText>
                         <MDBBtn className='d-flex justify-content-start mt-5'

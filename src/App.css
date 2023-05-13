@@ -13,7 +13,7 @@
   }
 .dark .nav-link{
   color: #cfd0d7;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .dark .nav-link:hover{
   background-color: rgba(207, 208, 215, 0.7);
@@ -53,7 +53,7 @@
   }
 .light .nav-link{
   color: rgba(71, 68, 99, 1);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .light .nav-link:hover{
   background-color: rgba(71, 68, 99, 0.7);
@@ -83,6 +83,13 @@
 }
 .light .btn.btn-primary.d-flex.justify-content-start:active{
   background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.nav-link.py-2.appButton{
+  border: none !important;
+}
+.nav-link.py-2.appButton:hover{
+  filter: brightness(85%) !important;
 }
 
 * {

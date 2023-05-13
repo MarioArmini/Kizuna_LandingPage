@@ -1,4 +1,19 @@
 {
     "language": "Language",
-    "title": "KIZUNA"
+    "title": "KIZUNA",
+    "subTitle": "Empower your Health",
+    "aboutText": "About",
+    "developersText": "Developers",
+    "contactsText": "Contacts",
+    "whitePaperCardButtonText": "Read the Whitepaper",
+    "explanationCardTitle": "A secure and private solution for sharing and analyzing health data",
+    "explanationCardSubTitle": "Protect your data and entrust it to authorized doctors, healthcare facilities or healthcare providers, thanks to the Blockchain",
+    "whitePaperCardTitle": "Want to know more and are you interested in the idea?",
+    "mediumCardTitle": "The decentralization and sharing of medical data",
+    "mediumCardSubTitle": "Learn how Blockchains can revolutionize the healthcare system and make it safer not only for users but also for healthcare professionals",
+    "mediumCardButtonText": "Read the article on Medium",
+    "githubCardTitle": "Explore Kizuna",
+    "githubCardSubTitle": "Learn how Kizuna works and view source code on GitHub",
+    "githubCardButtonText": "Go to the repository",
+    "appButtonText" : "Launch App"
 }
