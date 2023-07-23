@@ -12,7 +12,7 @@ import {
   MDBIcon
 } from 'mdb-react-ui-kit';
 
-export default function MainComponent(props) {
+export default function InfoComponent(props) {
 
   var cardBG2String = 'url(../assets/card_BG2.png)';
   var cardBGLight = 'url(../assets/card_BGLight.png)';
